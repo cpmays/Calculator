@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="JavaScript/script.js"></script> 
+    <title>Calculator</title>
+</head>
+<body>
+    <form name="calculator">
+        <table align="center">
+            <tr>
+                <td colspan ="10">
+                    <input name="number"  id= "answer" type="text" value="" size="56" value="" />
+                </td>
+            </tr>
+            <!--First Button Row-->
+            <tr>
+                <td>
+                    <input name="zero" type="button" value="  0  "  onClick="displaynum('0');"/>
+                </td>
+                <td>
+                    <input name="one" type="button" value="  1  "  onClick="displaynum('1');"/>
+                </td>
+                <td>
+                    <input name="two" type="button" value="  2  " onClick="displaynum('2');"/>
+                </td>
+                <td>
+                    <input name="equal" type="button" value="  =  " onClick="equals();" style="width: 38px"/>
+                </td>
+                <td colspan="3">
+                    <input name="clear" type="button" value="  Clear  " onClick="clearFunction();" style="width: 94px"/>
+                </td>
+                <td colspan="3">
+                    <input name="In2" type="button" value="  In2  " onClick="displaynum(Math.LN2);" style="width: 94px"/>
+                </td>
+            </tr>
+            <!--Second Button Row-->
+            <tr>
+                <td>
+                    <input name="three" type="button" value="  3  " onClick="displaynum('3');"/>
+                </td>
+                <td>
+                    <input name="four" type="button" value="  4  "  onClick="displaynum('4');"/>
+                </td>
+                <td>
+                    <input name="five" type="button" value="  5  " onClick="displaynum('5');"/>
+                </td>
+                <td>
+                    <input name="plus&minus" type="button" value="+/-" onClick="negation();" />
+                </td>
+                <td colspan="3">
+                    <input name="sqrtTwo" type="button" value="  sqrt(2)  " onClick="displaynum(Math.SQRT2);" style="width:94px" />
+                </td colspan="3">
+                <td>
+                    <input name="In10" type="button" value="  In10  " onClick="displaynum(Math.LN10);" style="width: 94px"/>
+                </td>
+            </tr>
+            <!--Third Button Row-->
+            <tr>
+                <td>
+                    <input name="six" type="button" value="  6  " onClick="displaynum('6');"/>
+                </td>
+                <td>
+                    <input name="seven" type="button" value="  7  " onClick="displaynum('7');"/>
+                </td>
+                <td>
+                    <input name="eight" type="button" value="  8  " onClick="displaynum('8');"/>
+                </td>
+                <td>
+                    <input name="pi" type="button" value="  pi  " onClick="displaynum(Math.PI);" style="width: 38px" />
+                </td>
+                <td colspan="3">
+                    <input name="sqrt1_2" type="button" value="  sqrt(1/2)  " onClick="displaynum(Math.SQRT1_2);" style="width: 94px"/>
+                </td colspan="3">
+                <td>
+                    <input name="log2e" type="button" value="  log2(e)  " onClick="displaynum(Math.LOG2E)" style="height: 25px; width:94px"/>
+                </td>
+            </tr>
+            <!--Forth Button Row-->
+            <tr>
+                <td>
+                    <input name="nine" type="button" value="  9  " onClick="displaynum('9');"/>
+                </td>
+                <td>
+                    <input name="dot" type="button" value="  .  " onClick="displaynum('.');"/>
+                </td>
+                <td>
+                    <input name="+" type="button" value="  +  " onClick="displaynum('+');"/>
+                </td>
+                <td>
+                    <input name="e" type="button" value="  e  " onClick="displaynum(Math.E);" style="width: 38px" />
+                </td>
+                <td colspan="3">
+                    <input name="random" type="button" value="  Random  " onClick="displaynum(Math.random());" style="width: 94px" />
+                </td colspan="3">
+                <td>
+                    <input name="log10e" type="button" value="  log10(e)  " onClick="displaynum(Math.LOG10E);" style="height: 25px; width: 94px"/>
+                </td>
+            </tr>
+            <!--Fifth Button Row-->
+            <tr >
+                <td>
+                    <input name="mines" type="button" value="  -  " onClick="displaynum('-');"/>
+                </td>
+                <td>
+                    <input name="multiply" type="button" value="  x  " onClick="displaynum('*');"/>
+                </td>
+                <td>
+                    <input name="dived" type="button" value="  /  " onClick="displaynum('/');"/>
+                </td>
+                <td colspan='5'>
+                    <p>Functions: 
+                        <select id="functions" >
+                            <option value="abs">abs(x)</option>
+                            <option value="tan">tan(x)</option>
+                            <option value="sin">sin(x)</option>
+                            <option value="cos">cos(x)</option>
+                            <option value="log">log(x)</option>
+                            <option value="floor">floor(x)</option>
+                            <option value="ceil">ceil(x)</option>
+                            <option value="exp">exp(x)</option>					
+                        </select> 
+                        <input name="apply" type="button" value="  apply  " onClick="applyFunction();" style="width: 90px"/>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
