@@ -1,0 +1,27 @@
+body {
+  background: #5e5e5e;
+}
+
+table {
+  border-width: thick;
+  border-spacing: 4px;
+  border-style: outset;
+  border-color: #363636;
+  border-collapse: separate;
+  background-color: #e0e0e0;
+}
+
+td {
+  border-width: 1px;
+  padding: 1px;
+  border-style: inset;
+  border-color: #f8f8f8;
+  background-color: #e0e0e0;
+}
+
+#answer {
+  width: 198px;
+}
+#functions {
+  width: 70px;
+}
